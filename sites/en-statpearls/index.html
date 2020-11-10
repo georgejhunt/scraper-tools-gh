@@ -1,0 +1,1148 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+   <title>Article Library</title>
+
+
+
+   <link rel="icon" href="/favicon.ico">
+
+
+   <!-- Bootstrap core CSS -->
+   <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+   <!-- Custom styles for this template -->
+   <!-- GOOGLE FONT -->
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" crossorigin="anonymous">
+   <!-- MAIN CSS -->
+   <link href="/assets/style.css" rel="stylesheet">
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+   <!--[if lt IE 9]>
+         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+       <![endif]-->
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+
+   <link href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+   <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+   <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+
+   <script src="/Scripts/GoogleAnalyticsTag_v1.js"></script>
+   <script src="/assets/js/segment_v1.js"></script>
+   <link href="https://vjs.zencdn.net/5.7.1/video-js.css" rel="stylesheet">
+   <script>
+
+         analytics.identify();
+
+   </script>
+
+
+  <script>
+   function set_fprom() {
+      console.log('loaded');
+      $(document).on('click', 'a[href="#submit-form"],a[href="#submit-form-2step"],img[imagelink="#submit-form"]', function () {
+         $FPROM.trackSignup({
+            email: $('input[name="email"].elInput').val(),
+            event_id: new Date().valueOf().toString()
+         },
+         function () { })
+      });
+   }
+
+   if (window.attachEvent) {
+      window.attachEvent('onload', set_fprom);
+   } else {
+      window.addEventListener('load', set_fprom, false);
+   }
+   </script>
+   <script src="/assets/js/firstpromote_v1.js"></script>
+</head>
+<body>
+   <!-- HEADER START-->
+<header class="header">
+
+	   <!-- HEADER TOP START-->
+	   <div class="header_top">
+		   <div class="container">
+			   <div class="header_top_content">
+				   <div class="header_top_left">
+					   <a href="/account/contributorinfo/" title="Become a Contributor" class="emph"><img src="/assets/images/author_icon.png" alt="Become a Contributor" title="Become a Contributor"> Become a Contributor </a>
+				   </div>
+				   <div class="header_top_right">
+					   <div class="search_holder">
+						   <form method="get" action="/search/sitesearch/">
+							   <input type="search" id="q" name="q" placeholder="Site Search">
+                        <input type="text" id="hpot" name="hpot" value="" style="width:0px;height:0px;background-color:transparent;border:none;">
+							   <input type="submit" name="" value="">
+						   </form>
+					   </div>
+
+
+					   <ul>
+						   <li><a href="/account/createaccount/">Sign Up</a></li>
+						   <li class="btn_login position-relative"><a href="#" title="Log In">Log In</a>
+                        <div class="loginbox">
+<form action="/account/login/" class="" method="post" role="form">                              <input type="hidden" name="returnUrl" value="/articlelibrary/" />
+                              <div class="inbx mb-2">
+                                 <label>Email</label>
+
+
+
+                                 <input data-val="true" data-val-email="The Email field is not a valid e-mail address." data-val-required="The Email field is required." id="Email" name="Email" placeholder="User Name" type="text" value="" />
+                                 <span class="field-validation-valid text-danger" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+
+                              </div>
+                              <div class="inbx mb-2">
+                                 <label>Password</label>
+
+                                 <input class="form-control input-sm chat-input" data-val="true" data-val-required="The Password field is required." id="Password" name="Password" placeholder="Password" type="password" />
+                              </div>
+                              <div class="inbx mb-3">
+                                 <label>pick Portal</label>
+                                 <select name="action">
+                                    <option value="" selected disabled>Select One</option>
+                                    <option value="current">Current Page</option>
+                                    <option value="dash">User Dashboard</option>
+
+                                    <option value="author">Contributor Dashboard</option>
+                                 </select>
+                              </div>
+                              <div class="inbx mb-4">
+                                 <label class="cont">
+
+                                    <input type="checkbox" checked="checked" id="RememberMe" name="RememberMe" value="true">
+                                    Keep me logged in  <span>or</span> <a href="/account/forgotpassword/">Forgot Password</a>
+                                    <span class="checkmark"></span>
+                                 </label>
+                              </div>
+                              <div class="inbx mb-0">
+                                 <input type="submit" value="Log in">
+                              </div>
+</form>                        </div>
+
+						   </li>
+						   <li><a href="/account/cart" title="Cart"><img src="/assets/images/cart_icon.png" alt=""></a></li>
+					   </ul>
+
+				   </div>
+			   </div>
+		   </div>
+	   </div>
+	   <!-- HEADER TOP END -->
+
+      <!-- HEADER BOTTOM START-->
+	   <div class="header_bottom">
+		   <div class="container leftAlignSub">
+			   <div class="header_content">
+				   <div class="logo">
+					   <a href="/home/index" title="Logo">
+						   <img src="/assets/images/logo.png" alt="Logo" title="Logo">
+					   </a>
+				   </div>
+				   <!-- NAVIGATION START -->
+				   <div class="navigation">
+					   <nav>
+                     <ul>
+                                                   <li>
+                              <a href="/account/contributorinfo/" title="Contribute">Contribute</a>
+                              <ul>
+                                 <li><a href="/account/contributorinfo/" title="Become an Author">Become an Author</a></li>
+                                 <li><a href="/account/contributorinfo/" title="Become an Editor">Become an Editor</a></li>
+                                 <li><a href="/account/contributorinfo/" title="Become and Editor in Chief">Become an Editor in Chief</a></li>
+                                 <li><a href="/account/contributorinfo/" title="Become a Nurse Editor">Become a Nurse Editor</a></li>
+
+                              </ul>
+                           </li>
+                        <li>
+                           <a href="#" title="CME/CE">CME/CE</a>
+                           <ul>
+                              <li><a href='/physician/cme/' title="Physician CME">Physician MD/DO CME</a></li>
+                              <li><a href="/home/freecme/" title="Physician">Free CME/CE</a></li>
+
+
+                           </ul>
+                        </li>
+
+
+
+
+                        <li>
+                           <a href="/home/appsandebooks" title="Apps & Ebooks">Apps & Ebooks</a>
+                        </li>
+                        <li>
+                           <a href="/ArticleLibrary/index" title="Article Library">Article Library</a>
+                        </li>
+
+                        <li>
+                           <a href="#" title="Vision">About</a>
+                           <ul>
+                              <li><a href="/home/about" title="About Us">About Us</a></li>
+                              <li><a href="/home/legal" title="Legal">Legal</a></li>
+                              <li><a href="/home/helpandcontact/">Contact Us</a></li>
+                           </ul>
+                        </li>
+
+                     </ul>
+					   </nav>
+				   </div>
+				   <div class="small_nav"></div>
+				   <div class="clearfix"></div>
+				   <!-- NAVIGATION END -->
+
+			   </div>
+		   </div>
+	   </div>
+	   <!-- HEADER BOTTOM END-->
+</header>
+<!-- HEADER END-->
+
+
+
+
+
+
+
+
+
+
+
+<style>
+   .specsel{
+      display:none;
+   }
+</style>
+
+<!-- INNER BANNER START-->
+<div class="inner_banner" style="background: url(/assets/images/about_banner.jpg) no-repeat;">
+   <div class="inner_banner_cn">
+      <h1>Article Library</h1>
+      <div class="breadcumb">
+         <ul>
+            <li><a href="/home/index" title="Home">Home</a></li>
+            <li>Article Library</li>
+         </ul>
+      </div>
+   </div>
+</div>
+<!-- INNER BANNER END -->
+
+<div class="mt-5">
+   <div class="container">
+
+      <div class="newavailablecont" style="padding:0px;">
+
+         <div class="container">
+            <div class="row">
+
+               <div class="col-md-6" style="text-align:center;">
+
+                     <button class="btn btn-lg btn-info" onclick="window.location.href = '/physician/cme/';">Register for Unlimited<br />CME Activities</button>
+
+               </div>
+
+
+               <div class="col-md-6"  style="text-align:center;">
+
+                     <button class="btn btn-lg btn-info" onclick="window.location.href = '/home/plansignup/';">Register for Free<br />Quiz Questions</button>
+
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<div class="container mt-5" style="min-height:75vh;">
+   <div class="row">
+
+
+      <div class="col-lg-4 ">
+         <h3>Filter By:</h3>
+         <span id="filter"></span>
+
+         <div class="accordion">
+
+            <div class="accrodian_header">Specialty</div>
+            <div class="mb-2">
+
+
+               <label for="qbank" style="font-weight:bold;">Select Profession</label>
+               <select id="profselect" class="form-control mb-2" onchange="profChanged(this.value)" autocomplete="off">
+                  <option value="0" selected> All </option>
+
+                     <option value="AL">Allied Health</option>
+                     <option value="CNS">Clinical Nurse Specialist</option>
+                     <option value="COM">Compliance</option>
+                     <option value="GR">Adult and Pediatric Life Support</option>
+                     <option value="MD">Medical Doctor</option>
+                     <option value="MS">Medical and Dental Student</option>
+                     <option value="NP">Nurse Practitioner</option>
+                     <option value="PA">Physician Assistant</option>
+                     <option value="PH">Pharmacist</option>
+                     <option value="RN">Nurse (BSN / RN / PN )</option>
+                     <option value="RNC">Registered Nurse Certification</option>
+                     <option value="SR">State Requirements</option>
+               </select>
+
+
+               <label for="qbank" style="font-weight:bold;">Select Specialty</label>
+                  <select id="AL" class="form-control specsel" onchange="refreshActivityListSpec(this,this.value)" autocomplete="off">
+                     <option value="0" selected disabled> ... </option>
+                        <option value="2">Anesthesia Technologist</option>
+                        <option value="5">Audiology</option>
+                        <option value="36">Certified Behavioral Health Technician</option>
+                        <option value="9">Certified Clinical Nutritionist (CCN)</option>
+                        <option value="629">Certified Hyperbaric Technologist (CHT)</option>
+                        <option value="10">Certified Medical Assistant</option>
+                        <option value="11">Certified Nursing Assistant</option>
+                        <option value="509">Certified Surgical 1st Assistant</option>
+                        <option value="65">Certified Surgical Technologist</option>
+                        <option value="13">Chiropractic-NBCE Part I</option>
+                        <option value="420">Chiropractic-NBCE Part II</option>
+                        <option value="517">Chiropractic-NBCE Part III</option>
+                        <option value="603">Chiropractic-NBCE SPEC</option>
+                        <option value="18">EKG Technician</option>
+                        <option value="460">EMR-First Medical Responder</option>
+                        <option value="20">EMS-AEMT Intermediate</option>
+                        <option value="493">EMS-Community Paramedic</option>
+                        <option value="357">EMS-Critical Care Paramedic</option>
+                        <option value="19">EMS-EMT Basic</option>
+                        <option value="354">EMS-Flight Paramedic</option>
+                        <option value="21">EMS-Paramedic</option>
+                        <option value="358">EMS-Tactical Paramedic</option>
+                        <option value="610">EMS-Wilderness Medicine</option>
+                        <option value="26">Holistic Medicine</option>
+                        <option value="401">Lab-Blood Banking Specialist</option>
+                        <option value="397">Lab-Chemistry Specialist</option>
+                        <option value="505">Lab-Clinical Laboratory Scientist (MT)</option>
+                        <option value="403">Lab-Hematology Specialist</option>
+                        <option value="506">Lab-Medical Lab Technician (CLT)</option>
+                        <option value="402">Lab-Microbiology Specialist</option>
+                        <option value="38">Lab-Molecular Pathology</option>
+                        <option value="47">Lab-Phlebotomy Technician</option>
+                        <option value="636">Mental Health Technician Certification (MHTC)</option>
+                        <option value="633">Naturopathic Part I - Basic Sciences</option>
+                        <option value="39">Naturopathic Part II - Clinical Sciences</option>
+                        <option value="14">Neuropsychology</option>
+                        <option value="40">Occupational Therapist</option>
+                        <option value="508">Occupational Therapy Assistant</option>
+                        <option value="44">Patient Care Technician</option>
+                        <option value="48">Physical Therapy</option>
+                        <option value="379">Physical Therapy-Geriatrics</option>
+                        <option value="378">Physical Therapy-Neurology</option>
+                        <option value="380">Physical Therapy-Orthopedics</option>
+                        <option value="381">Physical Therapy-Pediatrics</option>
+                        <option value="382">Physical Therapy-Sports</option>
+                        <option value="552">Psychiatric Technician</option>
+                        <option value="60">Radiology Tech-Cardiac US</option>
+                        <option value="53">Radiology Tech-Cardiovascular</option>
+                        <option value="52">Radiology Tech-Densitometry</option>
+                        <option value="56">Radiology Tech-Mammography</option>
+                        <option value="51">Radiology Technology</option>
+                        <option value="54">Radiology Technology-CT</option>
+                        <option value="55">Radiology Technology-Dosimetry</option>
+                        <option value="57">Radiology Technology-MRI</option>
+                        <option value="59">Radiology Technology-Quality</option>
+                        <option value="61">Radiology Technology-Vascular</option>
+                        <option value="58">Radiology Tech-Nuclear Medicine</option>
+                        <option value="66">Radiology Tech-Ultrasound</option>
+                        <option value="8">Radiology-Cardiovascular Technology</option>
+                        <option value="17">Registered Dietitian</option>
+                        <option value="570">Registered Medical Sono-AB</option>
+                        <option value="62">Respiratory Therapist</option>
+                        <option value="63">Social Work</option>
+                        <option value="64">Speech Pathology</option>
+                  </select>
+                  <select id="CNS" class="form-control specsel" onchange="refreshActivityListSpec(this,this.value)" autocomplete="off">
+                     <option value="0" selected disabled> ... </option>
+                        <option value="67">CNS-Adult Health</option>
+                        <option value="68">CNS-Adult Psychiatric Health</option>
+                        <option value="71">CNS-Adult-Gerontology</option>
+                        <option value="69">CNS-Child Adolescent Psych</option>
+                        <option value="70">CNS-Diabetes Management</option>
+                        <option value="469">CNS-Oncology</option>
+                        <option value="73">CNS-Pediatric</option>
+                  </select>
+                  <select id="COM" class="form-control specsel" onchange="refreshActivityListSpec(this,this.value)" autocomplete="off">
+                     <option value="0" selected disabled> ... </option>
+                        <option value="613">Billing and Corporate</option>
+                        <option value="604">Clinical Compliance</option>
+                        <option value="616">Conflict of Interest and Research</option>
+                        <option value="618">Healthcare Safety</option>
+                        <option value="614">HIPPA</option>
+                        <option value="615">Security and Privacy</option>
+                        <option value="617">Workforce</option>
+                  </select>
+                  <select id="GR" class="form-control specsel" onchange="refreshActivityListSpec(this,this.value)" autocomplete="off">
+                     <option value="0" selected disabled> ... </option>
+                        <option value="76">ACLS</option>
+                        <option value="553">International Trauma-ITLS</option>
+                        <option value="77">PALS</option>
+                  </select>
+                  <select id="MD" class="form-control specsel" onchange="refreshActivityListSpec(this,this.value)" autocomplete="off">
+                     <option value="0" selected disabled> ... </option>
+                        <option value="134">Addiction Medicine</option>
+                        <option value="78">Adolescent Medicine</option>
+                        <option value="699">Advanced Diabetes Management</option>
+                        <option value="86">Advanced Trauma-Support</option>
+                        <option value="79">Aerospace Medicine</option>
+                        <option value="80">Allergy and Immunology</option>
+                        <option value="81">Ambulatory and Urgent Care</option>
+                        <option value="82">Anesthesiology</option>
+                        <option value="83">Anesthesiology-Cardiothoracic</option>
+                        <option value="85">Anesthesiology-Pediatric</option>
+                        <option value="605">Anesthesiology-Transesophageal Echo</option>
+                        <option value="479">Brain Injury Medicine</option>
+                        <option value="87">Cardiology</option>
+                        <option value="569">Cardiology-CV Computed Tomography</option>
+                        <option value="568">Cardiology-Echocardiography</option>
+                        <option value="88">Cardiology-Electrophysiology</option>
+                        <option value="89">Cardiology-Failure Transplant</option>
+                        <option value="90">Cardiology-Interventional</option>
+                        <option value="567">Cardiology-Nuclear</option>
+                        <option value="630">Certified Hypertension Clinician</option>
+                        <option value="385">Clinical-Informatics</option>
+                        <option value="374">Clinical-Tropical Medicine</option>
+                        <option value="355">Compliance Physician</option>
+                        <option value="91">Critical Care</option>
+                        <option value="92">Dermatology</option>
+                        <option value="392">Dermatology-Pediatric</option>
+                        <option value="393">Dermatology-Procedural</option>
+                        <option value="391">Dermatopathology</option>
+                        <option value="695">Disaster Medicine</option>
+                        <option value="93">Emergency Medicine</option>
+                        <option value="338">Emergency Medicine EMS</option>
+                        <option value="337">Emergency Ultrasound</option>
+                        <option value="94">Endocrinology</option>
+                        <option value="596">Environmental and Wilderness</option>
+                        <option value="95">Family Medicine</option>
+                        <option value="96">Gastroenterology</option>
+                        <option value="97">Genetics</option>
+                        <option value="98">Geriatrics</option>
+                        <option value="99">Hematology</option>
+                        <option value="100">Hospice And Palliative Medicine</option>
+                        <option value="101">Infectious Disease</option>
+                        <option value="637">Integrative Medicine</option>
+                        <option value="102">Internal Medicine</option>
+                        <option value="696">MRCGP-Applied Knowledge Test</option>
+                        <option value="658">MRCP UK and Ireland Part 1</option>
+                        <option value="657">MRCP UK and Ireland Part 2</option>
+                        <option value="661">MRCSUK Part A</option>
+                        <option value="103">Nephrology</option>
+                        <option value="104">Neurology</option>
+                        <option value="561">Neurology-Behavioral Neuropsychiatry</option>
+                        <option value="471">Neurology-Critical Care</option>
+                        <option value="475">Neurology-Epilepsy</option>
+                        <option value="105">Neurology-Headache</option>
+                        <option value="106">Neurology-Neurodevelopmental</option>
+                        <option value="107">Neurology-Neuromuscular</option>
+                        <option value="476">Neurology-Neurophysiology</option>
+                        <option value="480">Neurology-Vascular</option>
+                        <option value="147">Nuclear Medicine</option>
+                        <option value="609">Nutrition Medicine</option>
+                        <option value="108">Obesity Medicine</option>
+                        <option value="109">Occupational Medicine</option>
+                        <option value="110">Oncology</option>
+                        <option value="557">Osteopathic Neuromusculoskeletal Medicine</option>
+                        <option value="111">Pain Medicine</option>
+                        <option value="112">Pathology-Anatomic</option>
+                        <option value="409">Pathology-Chemistry</option>
+                        <option value="412">Pathology-Cytopathology</option>
+                        <option value="413">Pathology-Forensics</option>
+                        <option value="414">Pathology-Hematology</option>
+                        <option value="406">Pathology-Laboratory Medicine</option>
+                        <option value="415">Pathology-Microbiology</option>
+                        <option value="416">Pathology-Molecular Genetic</option>
+                        <option value="417">Pathology-Neuropathology</option>
+                        <option value="418">Pathology-Pediatric</option>
+                        <option value="408">Pathology-Transfusion Medicine</option>
+                        <option value="113">Pediatric</option>
+                        <option value="114">Pediatric-Cardiology</option>
+                        <option value="115">Pediatric-Child Abuse</option>
+                        <option value="116">Pediatric-Critical Care</option>
+                        <option value="117">Pediatric-Developmental</option>
+                        <option value="118">Pediatric-Emergency Medicine</option>
+                        <option value="119">Pediatric-Endocrinology</option>
+                        <option value="120">Pediatric-Gastroenterology</option>
+                        <option value="121">Pediatric-Hematology-Oncology</option>
+                        <option value="472">Pediatric-Hospital Medicine</option>
+                        <option value="122">Pediatric-Infectious Diseases</option>
+                        <option value="123">Pediatric-Neonatal Perinatal</option>
+                        <option value="124">Pediatric-Nephrology</option>
+                        <option value="125">Pediatric-Neurology</option>
+                        <option value="126">Pediatric-Pulmonology</option>
+                        <option value="127">Pediatric-Rehabilitation</option>
+                        <option value="128">Pediatric-Rheumatology</option>
+                        <option value="130">Pediatric-Transplant</option>
+                        <option value="462">Phlebology</option>
+                        <option value="131">Physical Medicine</option>
+                        <option value="659">PLAS Assessment</option>
+                        <option value="133">Psychiatry</option>
+                        <option value="138">Psychiatry - Consultation-Liaison</option>
+                        <option value="135">Psychiatry-Child Adolescent</option>
+                        <option value="136">Psychiatry-Forensic</option>
+                        <option value="137">Psychiatry-Geriatric</option>
+                        <option value="139">Public and Preventive Medicine</option>
+                        <option value="140">Pulmonary</option>
+                        <option value="612">Quality Assurance and Utilization</option>
+                        <option value="141">Radiation Oncology</option>
+                        <option value="142">Radiology</option>
+                        <option value="320">Radiology-Breast</option>
+                        <option value="318">Radiology-Cardiac</option>
+                        <option value="319">Radiology-Gastrointestinal</option>
+                        <option value="324">Radiology-Genitourinary</option>
+                        <option value="150">Radiology-Interventional</option>
+                        <option value="145">Radiology-Musculoskeletal</option>
+                        <option value="146">Radiology-Neuroradiology</option>
+                        <option value="148">Radiology-Pediatric</option>
+                        <option value="149">Radiology-Physics and Radioisotope Safety</option>
+                        <option value="328">Radiology-Thoracic</option>
+                        <option value="329">Radiology-Ultrasound</option>
+                        <option value="151">Rheumatology</option>
+                        <option value="638">Simulation In Healthcare</option>
+                        <option value="152">Sleep</option>
+                        <option value="153">SPEX</option>
+                        <option value="154">Spinal Cord Injury</option>
+                        <option value="155">Sports Medicine</option>
+                        <option value="156">Surgery-Cardiothoracic</option>
+                        <option value="157">Surgery-Colon and Rectal</option>
+                        <option value="158">Surgery-Complex Oncology</option>
+                        <option value="159">Surgery-Craniofacial</option>
+                        <option value="628">Surgery-Facial Plastics</option>
+                        <option value="160">Surgery-General</option>
+                        <option value="161">Surgery-Gynecologic Oncology</option>
+                        <option value="162">Surgery-Hand</option>
+                        <option value="697">Surgery-Hepatobiliary</option>
+                        <option value="163">Surgery-Maternal and Fetal</option>
+                        <option value="164">Surgery-Neurosurgery</option>
+                        <option value="165">Surgery-Obstetrics Gynecology</option>
+                        <option value="478">Surgery-Oculoplastics</option>
+                        <option value="166">Surgery-Ophthalmology</option>
+                        <option value="167">Surgery-Oral And Maxillofacial</option>
+                        <option value="168">Surgery-Orthopedic</option>
+                        <option value="169">Surgery-Otolaryngology</option>
+                        <option value="170">Surgery-Pediatric</option>
+                        <option value="171">Surgery-Plastic</option>
+                        <option value="484">Surgery-Podiatry Cert Medicine</option>
+                        <option value="485">Surgery-Podiatry Cert Surgery</option>
+                        <option value="173">Surgery-Reproductive</option>
+                        <option value="705">Surgery-Spine</option>
+                        <option value="174">Surgery-Thoracic</option>
+                        <option value="503">Surgery-Urogynecology</option>
+                        <option value="175">Surgery-Urologic</option>
+                        <option value="176">Surgery-Urologic Pediatric</option>
+                        <option value="177">Surgery-Vascular</option>
+                        <option value="178">Toxicology</option>
+                        <option value="179">Transplant Hepatology</option>
+                        <option value="180">Undersea and Hyperbaric</option>
+                        <option value="597">Vascular Medicine</option>
+                        <option value="477">Wound</option>
+                  </select>
+                  <select id="MS" class="form-control specsel" onchange="refreshActivityListSpec(this,this.value)" autocomplete="off">
+                     <option value="0" selected disabled> ... </option>
+                        <option value="287">Adult Ambulatory-Medical Student</option>
+                        <option value="663">Allergy - Medical Student</option>
+                        <option value="530">Anatomy-Medical Student</option>
+                        <option value="664">Anesthesiology - Medical Student</option>
+                        <option value="349">Australian Medical-Adaptive</option>
+                        <option value="532">Behavioral Sci-Medical Student</option>
+                        <option value="533">Biochemistry-Medical Student</option>
+                        <option value="352">Canada MCC-QE 1</option>
+                        <option value="665">Cardiology - Medical Student</option>
+                        <option value="689">Cardiothoracic-Medical Student</option>
+                        <option value="692">Caribbean Medical Licensing Exam</option>
+                        <option value="524">Clinical Diagnosis</option>
+                        <option value="184">COMLEX Level 1</option>
+                        <option value="185">COMLEX Level 2</option>
+                        <option value="186">COMLEX Level 3</option>
+                        <option value="666">Critical Care-Medical Student</option>
+                        <option value="511">Dermatology-Medical Student</option>
+                        <option value="534">Embryology-Medical Student</option>
+                        <option value="297">Emergency Medicine-Med Student</option>
+                        <option value="667">Endocrinology-Medical Student</option>
+                        <option value="290">Family Medicine-Medical Student</option>
+                        <option value="668">Gastroenterology-Medical Student</option>
+                        <option value="535">Genetics-Medical Student</option>
+                        <option value="703">Hand-Medical Student</option>
+                        <option value="700">Hematology-Medical Student</option>
+                        <option value="536">Histology-Medical Student</option>
+                        <option value="372">Indian PG Entrance Exam-NEETPG</option>
+                        <option value="656">Indonesia CBT Final Examination</option>
+                        <option value="669">Infectious Disease-Medical Student</option>
+                        <option value="291">Internal Medicine-Med Student</option>
+                        <option value="642">Law, Medicine, and Ethics</option>
+                        <option value="662">Medical Council Nigeria (MDCN)</option>
+                        <option value="298">Medicine Advanced-Med Student</option>
+                        <option value="537">Microbiology-Medical Student</option>
+                        <option value="632">National Board Dental Examination (NBDE) Part I</option>
+                        <option value="635">National Board Dental Examination (NBDE) Part II</option>
+                        <option value="660">Nepal Medical Council Exam</option>
+                        <option value="670">Nephrology-Medical Student</option>
+                        <option value="538">Neuroanatomy-Medical Student</option>
+                        <option value="289">Neurology-Medical Student</option>
+                        <option value="685">Neurosurgery-Medical School</option>
+                        <option value="292">Ob Gyn-Medical Student</option>
+                        <option value="671">Oncology-Medical Student</option>
+                        <option value="655">Ophthalmology-Medical Student</option>
+                        <option value="492">Optometry-Advanced Medical Care</option>
+                        <option value="487">Optometry-Basic Science</option>
+                        <option value="41">Optometry-Clinical Science</option>
+                        <option value="686">Orthopedic-Medical Student</option>
+                        <option value="698">Osteopathic Manipulation</option>
+                        <option value="688">Otolaryngology-Medical Student</option>
+                        <option value="651">Pakistan-1st Professional</option>
+                        <option value="652">Pakistan-2nd Professional</option>
+                        <option value="653">Pakistan-3rd Professional</option>
+                        <option value="654">Pakistan-Final Professional</option>
+                        <option value="539">Path Clin Lab-Medical Student</option>
+                        <option value="540">Pathology-Medical Student</option>
+                        <option value="299">Pediatrics-Advanced Med Student</option>
+                        <option value="293">Pediatrics-Medical Student</option>
+                        <option value="672">Peds-Cardiology Medical Student</option>
+                        <option value="673">Peds-Critical Care Medical Student</option>
+                        <option value="674">Peds-Endocrinology Med Student</option>
+                        <option value="675">Peds-GI Medical Student</option>
+                        <option value="676">Peds-Hem Onc-Medical Student</option>
+                        <option value="677">Peds-ID-Medical Student</option>
+                        <option value="678">Peds-Neonatal Medical Student</option>
+                        <option value="679">Peds-Nephrology Medical Student</option>
+                        <option value="694">Peds-Neurology Medical Student</option>
+                        <option value="680">Peds-Pulmonology Medical Student</option>
+                        <option value="693">Peds-Surgery Medical Student</option>
+                        <option value="541">Pharmacology-Medical Student</option>
+                        <option value="558">Philippine Physician Exam (PLE)</option>
+                        <option value="681">Physical Medicine-Medical Student</option>
+                        <option value="542">Physiology-Medical Student</option>
+                        <option value="690">Plastic Surgery-Medical Student</option>
+                        <option value="294">Psychiatry-Medical Student</option>
+                        <option value="682">Pulmonary-Medical Student</option>
+                        <option value="683">Radiology-Medical Student</option>
+                        <option value="684">Rheumatology-Medical Student</option>
+                        <option value="704">Sports Medicine-Medical Student</option>
+                        <option value="631">Statistics and Healthcare Economics</option>
+                        <option value="300">Surgery Advanced-Med Student</option>
+                        <option value="295">Surgery-Medical Student</option>
+                        <option value="325">Surgery-Podiatry APMLE Part 1</option>
+                        <option value="326">Surgery-Podiatry APMLE Part 2</option>
+                        <option value="327">Surgery-Podiatry APMLE Part 3</option>
+                        <option value="348">UK PLAB 1</option>
+                        <option value="687">Urology-Medical Student</option>
+                        <option value="181">USMLE Step 1</option>
+                        <option value="182">USMLE Step 2</option>
+                        <option value="183">USMLE Step 3</option>
+                        <option value="691">Vascular Surgery-Medical Student</option>
+                  </select>
+                  <select id="NP" class="form-control specsel" onchange="refreshActivityListSpec(this,this.value)" autocomplete="off">
+                     <option value="0" selected disabled> ... </option>
+                        <option value="187">NP-Acute Adult and Gerontology</option>
+                        <option value="371">NP-Acute Care Pediatric</option>
+                        <option value="464">NP-Addiction</option>
+                        <option value="188">NP-Adult</option>
+                        <option value="193">NP-Adult-Geriatric Primary Care</option>
+                        <option value="572">NP-Advanced Health Assessment</option>
+                        <option value="574">NP-Advanced Pathophysiology</option>
+                        <option value="573">NP-Advanced Pharmacology</option>
+                        <option value="575">NP-Advanced Physiology</option>
+                        <option value="463">NP-Dermatology</option>
+                        <option value="190">NP-Diabetes Management</option>
+                        <option value="316">NP-Emergency Medicine</option>
+                        <option value="191">NP-Family</option>
+                        <option value="465">NP-Genetics</option>
+                        <option value="194">NP-Midwife</option>
+                        <option value="458">NP-Neonatal</option>
+                        <option value="466">NP-Nephrology</option>
+                        <option value="468">NP-Oncology</option>
+                        <option value="470">NP-Orthopedic</option>
+                        <option value="195">NP-Pediatric Primary Care</option>
+                        <option value="192">NP-Psychiatric Mental Health</option>
+                        <option value="701">NP-Urology</option>
+                        <option value="360">NP-Women&#39;s Health Care</option>
+                        <option value="702">NP-Wound, Continence, And Ostomy</option>
+                        <option value="84">Nurse Anesthetist</option>
+                  </select>
+                  <select id="PA" class="form-control specsel" onchange="refreshActivityListSpec(this,this.value)" autocomplete="off">
+                     <option value="0" selected disabled> ... </option>
+                        <option value="640">PA-Anesthesiology</option>
+                        <option value="339">PA-Cardiovascular Thoracic</option>
+                        <option value="340">PA-Emergency Medicine</option>
+                        <option value="341">PA-Hospital Medicine</option>
+                        <option value="342">PA-Nephrology</option>
+                        <option value="343">PA-Orthopedic</option>
+                        <option value="196">PA-PANCE</option>
+                        <option value="335">PA-PANRE</option>
+                        <option value="344">PA-Pediatric</option>
+                        <option value="345">PA-Psychiatry</option>
+                  </select>
+                  <select id="PH" class="form-control specsel" onchange="refreshActivityListSpec(this,this.value)" autocomplete="off">
+                     <option value="0" selected disabled> ... </option>
+                        <option value="304">Pharmacy-Ambulatory Care</option>
+                        <option value="548">Pharmacy-Applied Toxicology</option>
+                        <option value="333">Pharmacy-Cardiac</option>
+                        <option value="305">Pharmacy-Critical Care</option>
+                        <option value="313">Pharmacy-Geriatric</option>
+                        <option value="312">Pharmacy-Infectious Disease</option>
+                        <option value="197">Pharmacy-NAPLEX Review</option>
+                        <option value="306">Pharmacy-Nuclear Medicine</option>
+                        <option value="307">Pharmacy-Nutrition Support</option>
+                        <option value="308">Pharmacy-Oncology</option>
+                        <option value="309">Pharmacy-Pediatric</option>
+                        <option value="310">Pharmacy-Pharmacotherapy</option>
+                        <option value="311">Pharmacy-Psychiatric</option>
+                        <option value="486">Pharmacy-Rules and Regulations</option>
+                        <option value="198">Pharmacy-Technician (PTCB)</option>
+                        <option value="459">Pharmacy-Transplant</option>
+                  </select>
+                  <select id="RN" class="form-control specsel" onchange="refreshActivityListSpec(this,this.value)" autocomplete="off">
+                     <option value="0" selected disabled> ... </option>
+                        <option value="527">Nurse-Adult Medical Surgical PN</option>
+                        <option value="513">Nurse-Adult Medical Surgical RN</option>
+                        <option value="531">Nurse-Anatomy</option>
+                        <option value="523">Nurse-Calculations</option>
+                        <option value="528">Nurse-Child Health PN</option>
+                        <option value="515">Nurse-Child Health RN</option>
+                        <option value="512">Nurse-Community Health</option>
+                        <option value="555">Nurse-Critical Care Rhythms</option>
+                        <option value="554">Nurse-Elder Adult Care</option>
+                        <option value="519">Nurse-Fundamentals</option>
+                        <option value="571">Nurse-Health Assessment</option>
+                        <option value="551">Nurse-Lab and Diagnostic Testing</option>
+                        <option value="199">Nurse-LPN LVN NCLEX PN</option>
+                        <option value="514">Nurse-Maternal Newborn PN</option>
+                        <option value="525">Nurse-Maternal Newborn RN</option>
+                        <option value="520">Nurse-Mental Health PN</option>
+                        <option value="516">Nurse-Mental Health RN</option>
+                        <option value="544">Nurse-Microbiology</option>
+                        <option value="200">Nurse-NCLEX RN</option>
+                        <option value="550">Nurse-Nutrition</option>
+                        <option value="556">Nurse-Pathophysiology</option>
+                        <option value="526">Nurse-Pharmacology PN</option>
+                        <option value="521">Nurse-Pharmacology RN</option>
+                        <option value="543">Nurse-Physiology</option>
+                        <option value="522">Nurse-Professional and Ethics</option>
+                  </select>
+                  <select id="RNC" class="form-control specsel" onchange="refreshActivityListSpec(this,this.value)" autocomplete="off">
+                     <option value="0" selected disabled> ... </option>
+                        <option value="201">Nurse-Addiction (CARN)</option>
+                        <option value="202">Nurse-Administrator NE NEA</option>
+                        <option value="203">Nurse-AIDS-HIV (ACRN AACRN)</option>
+                        <option value="639">Nurse-Alzheimer and Dementia</option>
+                        <option value="204">Nurse-Ambulatory Care</option>
+                        <option value="206">Nurse-Anticoagulation</option>
+                        <option value="627">Nurse-Assisted Living</option>
+                        <option value="207">Nurse-Bariatric (CBN)</option>
+                        <option value="208">Nurse-Breast Care</option>
+                        <option value="209">Nurse-Cardiovascular CVN-CVRN</option>
+                        <option value="210">Nurse-Case Management</option>
+                        <option value="495">Nurse-Certified Educator</option>
+                        <option value="549">Nurse-Clinical Leader</option>
+                        <option value="211">Nurse-Continence Care</option>
+                        <option value="212">Nurse-Corrections (CCN)</option>
+                        <option value="213">Nurse-Critical Care (CCRN)</option>
+                        <option value="214">Nurse-Dermatology (DNC)</option>
+                        <option value="215">Nurse-Developmental Disability</option>
+                        <option value="216">Nurse-Diabetes Educator (CDE)</option>
+                        <option value="331">Nurse-Eating Disorders (CEDRN)</option>
+                        <option value="218">Nurse-Emergency Certification</option>
+                        <option value="473">Nurse-Emergency Pediatric Certification</option>
+                        <option value="219">Nurse-Flight Registered (CFRN)</option>
+                        <option value="220">Nurse-Foot-Nail Care (CFCN)</option>
+                        <option value="504">Nurse-Forensic (CFN)</option>
+                        <option value="221">Nurse-Gastroenterology (CGRN)</option>
+                        <option value="222">Nurse-Genetics Clinical (GCN)</option>
+                        <option value="223">Nurse-Gerontology (NCA)</option>
+                        <option value="255">Nurse-Healthcare Quality</option>
+                        <option value="224">Nurse-Hemodialysis (CHN)</option>
+                        <option value="226">Nurse-Hospice-Palliative CHPN</option>
+                        <option value="227">Nurse-Hyperbaric (CHRN)</option>
+                        <option value="228">Nurse-Infection Control (CIC)</option>
+                        <option value="229">Nurse-Informatics</option>
+                        <option value="230">Nurse-Infusion (CRNI)</option>
+                        <option value="251">Nurse-Inpatient Obstetric RNC</option>
+                        <option value="231">Nurse-Lactation (CLA)</option>
+                        <option value="232">Nurse-Low Risk Neonatal (LRN)</option>
+                        <option value="233">Nurse-Managed Care (CMCN)</option>
+                        <option value="234">Nurse-Maternal Newborn (MNN)</option>
+                        <option value="235">Nurse-Medical Surgical</option>
+                        <option value="500">Nurse-Mobile Intensive Care MICN</option>
+                        <option value="236">Nurse-Neonatal Intensive Care</option>
+                        <option value="423">Nurse-Neonatal Transport C-NPT</option>
+                        <option value="237">Nurse-Nephrology (CNN)</option>
+                        <option value="238">Nurse-Neuroscience (CNRN)</option>
+                        <option value="239">Nurse-Occupational (COHN)</option>
+                        <option value="240">Nurse-Oncology (OCN)</option>
+                        <option value="241">Nurse-Operating Room (CNOR)</option>
+                        <option value="242">Nurse-Ophthalmology (CRNO)</option>
+                        <option value="243">Nurse-Orthopedic (ONC)</option>
+                        <option value="245">Nurse-Otolaryngology (CORLN)</option>
+                        <option value="246">Nurse-Pain Management (PMCN)</option>
+                        <option value="247">Nurse-Pediatric (CPN)</option>
+                        <option value="248">Nurse-Pediatric Critical Care</option>
+                        <option value="249">Nurse-Pediatric Emergency CPEN</option>
+                        <option value="250">Nurse-Pediatric Hem Onc (CPHON)</option>
+                        <option value="205">Nurse-Perianesthesia CAPA-CPAN</option>
+                        <option value="252">Nurse-Peritoneal Dialysis (CPDN)</option>
+                        <option value="253">Nurse-Plastic Surgery (CPSN)</option>
+                        <option value="545">Nurse-Preceptor Practice</option>
+                        <option value="499">Nurse-Prehospital (PA PHRN)</option>
+                        <option value="254">Nurse-Professional Development</option>
+                        <option value="256">Nurse-Progressive Care (PCCN)</option>
+                        <option value="257">Nurse-Psychiatric Health</option>
+                        <option value="258">Nurse-Radiologic (CRN)</option>
+                        <option value="259">Nurse-Rehabilitation Registered</option>
+                        <option value="260">Nurse-Risk Management (CPHRM)</option>
+                        <option value="262">Nurse-Sexual Assault (SANE)</option>
+                        <option value="510">Nurse-Stroke Certified (SC-RN)</option>
+                        <option value="263">Nurse-Transplant (CCTN-CCTC))</option>
+                        <option value="264">Nurse-Transport (CTRN)</option>
+                        <option value="424">Nurse-Trauma (TCRN)</option>
+                        <option value="265">Nurse-Trauma Certification</option>
+                        <option value="266">Nurse-Urologic Registered</option>
+                        <option value="641">Nurse-Vascular Access (VABC)</option>
+                        <option value="267">Nurse-Wound Care</option>
+                        <option value="546">Nurse-Wound Care and Ostomy</option>
+                        <option value="547">Nurse-Wound, Ostomy, and Continence</option>
+                  </select>
+                  <select id="SR" class="form-control specsel" onchange="refreshActivityListSpec(this,this.value)" autocomplete="off">
+                     <option value="0" selected disabled> ... </option>
+                        <option value="620">Alabama State CME CE Requirements</option>
+                        <option value="621">Alaska State CME CE Requirements</option>
+                        <option value="622">Arkansas State CME CE Requirements</option>
+                        <option value="578">California State CME CE Requirements</option>
+                        <option value="579">Connecticut State CME CE Requirements</option>
+                        <option value="625">Delaware State CME CE Requirements</option>
+                        <option value="580">District of Columbia CME CE Requirements</option>
+                        <option value="577">Florida State CME CE Requirements</option>
+                        <option value="582">Iowa State CME CE Requirements</option>
+                        <option value="583">Kentucky State CME CE Requirements</option>
+                        <option value="601">Maryland State CME CE Requirements</option>
+                        <option value="584">Massachusetts State CME CE Requirements</option>
+                        <option value="624">Michigan State CME CE Requirements</option>
+                        <option value="585">Nevada State CME CE Requirements</option>
+                        <option value="586">New Jersey State CME CE Requirements</option>
+                        <option value="599">New Mexico State CME CE Requirements</option>
+                        <option value="587">New York State CME CE Requirements</option>
+                        <option value="626">North Carolina State CME CE Requirements</option>
+                        <option value="588">Ohio State CME CE Requirements</option>
+                        <option value="600">Oklahoma State CME CE Requirements</option>
+                        <option value="598">Oregon State CME CE Requirements</option>
+                        <option value="589">Pennsylvania State CME CE Requirements</option>
+                        <option value="590">Rhode Island State CME CE Requirements</option>
+                        <option value="591">South Carolina State CME CE Requirements</option>
+                        <option value="592">Tennessee State CME CE Requirements</option>
+                        <option value="593">Texas State CME CE Requirements</option>
+                        <option value="707">Utah State CME CE Requirements</option>
+                        <option value="594">Vermont State CME CE Requirements</option>
+                        <option value="709">Washington State CME CE Requirements</option>
+                        <option value="595">West Virginia State CME CE Requirements</option>
+                  </select>
+
+
+            </div>
+
+
+         </div>
+         <button class="btn btn-info mt-2 mb-2" onclick="refreshActivityAll();">Clear Filter</button>
+      </div>
+
+
+      <div class="col-lg-8">
+         <div id="content">
+
+            <div class="d-flex justify-content-center"><div class="spinner-border text-warning" style="width: 5rem; height: 5rem;" role="status"></div></div>
+         </div>
+      </div>
+
+
+
+   </div>
+</div>
+
+
+<script>
+
+   var spinner = '<div class="d-flex justify-content-center"><div class="spinner-border text-warning" style="width: 4rem; height: 4rem;" role="status"></div></div>';
+   var firstQ = '';
+   function refreshActivityListScience(val)
+   {
+      $("#content").html(spinner);
+      $("#filter").html("Anatomic Science: " + val);
+      $(".specsel").val(0);
+      $("#profselect").val(0);
+      $.ajax({
+         url: '/articlelibrary/partialpublishedarticles/',
+         dataType: 'html',
+         data: { asci: val },
+         traditional: true,
+         type: 'GET',
+         success: function (content) {
+            $("#content").html(content);
+
+         }
+      });
+   }
+
+   function profChanged(val)
+   {
+      $(".specsel").hide();
+      $("#" + val).show();
+   }
+
+   function refreshActivityListSpec(sel,val) {
+      $("#content").html(spinner);
+      $("#filter").html("Specialty: " + sel.options[sel.selectedIndex].text);
+      $('#sciselect').val(0);
+      $.ajax({
+         url: '/articlelibrary/partialpublishedarticles/',
+         dataType: 'html',
+         data: { spec: val, asci: "" },
+         traditional: true,
+         type: 'GET',
+         success: function (content) {
+            $("#content").html(content);
+         }
+      });
+   }
+
+
+   function refreshActivityAll() {
+      $("#content").html(spinner);
+      $("#filter").html("");
+      $('#sciselect').val(0);
+      $(".specsel").val(0);
+      $("#profselect").val(0);
+      $.ajax({
+         url: '/articlelibrary/partialpublishedarticles/',
+         dataType: 'html',
+         traditional: true,
+         type: 'GET',
+         cache: true,
+         success: function (content) {
+            $("#content").html(content);
+
+            if (firstQ != "") {
+               SearchTable(firstQ);
+               firstQ = "";
+            }
+         }
+      });
+   }
+
+   $(document).ready(function () {
+      refreshActivityAll();
+   });
+</script>
+
+     <!-- FOOTER START -->
+<footer class="footer">
+	<div class="container">
+		<div class="footer_top">
+			<div class="ft_logo">
+				<img src="/assets/images/logo.png" alt="Logo" title="Logo">
+			</div>
+			<div class="ft_social">
+				<ul>
+					<li>FOLLOW US </li>
+					<li><a href="https://www.linkedin.com/company/statpearls-publishing" title="Linkedin"><i class="fa fa-linkedin-square"></i></a></li>
+					<li><a href="http://www.facebook.com/statpearls/" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+
+				</ul>
+			</div>
+		</div>
+		<div class="footer_nav_holder">
+			<div class="row">
+				<div class="col-md-4">
+					<h2>Company</h2>
+					<ul>
+						<li><a href="/home/about" title="About Us">About Us</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<h2>Education</h2>
+					<div class="row">
+						<div class="col-lg-4">
+							<ul>
+								<li><a href="/physician/cme/" title="Physician">Physician CME</a></li>
+                        <li><a href="/home/freecme/" title="Physician">Free CME</a></li>
+
+							</ul>
+						</div>
+						<div class="col-lg-8">
+							<ul>
+
+
+
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<h2>Information</h2>
+					<ul>
+						<li><a href='/home/helpandcontact/' title="FAQ’s">FAQ’s</a></li>
+						<li><a href="/home/helpandcontact/">Contact Us</a></li>
+                  <li><a href="/home/privacypolicy/">Privacy Policy</a></li>
+                  <li><a href="/home/legal/">Legal</a></li>
+						<li><a href="/home/refundpolicy/">Refund Policy</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="foot_bottom">
+			<div class="copyright">
+				<p>2020 StatPearls. All Rights Reserved. </p>
+			</div>
+			<div class="privacy_nav">
+				<ul>
+					<li><a href="/home/viewtermsofuse/">Terms and Conditions</a></li>
+					<li><a href="/home/privacypolicy/">Privacy Policy</a></li>
+				</ul>
+			</div>
+
+
+
+		</div>
+
+
+
+	</div>
+</footer>
+<!-- FOOTER END -->
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="/assets/js/popper.min.js"></script>
+<script src="https://use.fontawesome.com/4b1a371264.js"></script>
+<script src="/assets/js/dzsparallaxer.js"></script>
+<script src="/assets/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="/assets/js/jquery.counterup.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/spcart_v1.js"></script>
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+
+
+<script>
+   function Logout() {
+      document.getElementById('logoutForm').submit();
+      return;
+   }
+
+	$(document).ready(function(){
+
+          $(".btn_login a").click(function(event){
+
+             if ($(this).attr('href') == '#') {
+                $(this).next().slideToggle();
+                //setTimeout(function(){ $("#dtls1").fadeOut(); }, 10000);
+                event.stopPropagation();
+                event.preventDefault();
+             }
+	    });
+
+	    $(".loginbox").on("click", function (event) {
+
+	        event.stopPropagation();
+
+	    });
+
+	    $("#pick").click(function(){
+
+	    	$(this).next().slideToggle();
+	        //setTimeout(function(){ $("#dtls1").fadeOut(); }, 10000);
+	        event.stopPropagation();
+
+	    });
+
+
+	     $(".megaoprtr-new").on("click", function (event) {
+
+	        event.stopPropagation();
+
+	    });
+
+
+	});
+
+
+
+    $(document).on("click", function () {
+
+    $(".loginbox").slideUp();
+
+});
+
+
+     $(document).on("click", function () {
+
+    $(".megaoprtr-new").slideUp();
+
+});
+</script>
+
+
+<script>
+
+
+   $("ul.fst").bind('scroll', function () {
+      if ($(this).scrollTop() > 100) {
+         $(this).find('.dwnbtn i').addClass("slct");
+
+      }
+      else {
+         $(this).find('.dwnbtn i').removeClass("slct");
+
+      }
+   });
+
+   $('.dwnbtn').click(function () {
+      $(this).closest('ul.fst').addClass('scrlul');
+   });
+
+
+   $(window).load(function () {
+      var divHeight = $('.oterdivheight').height();
+      $('.takeheight').css('min-height', divHeight + 'px');
+   });
+
+   $(window).resize(function () {
+      var divHeight = $('.oterdivheight').height();
+      $('.takeheight').css('min-height', divHeight + 'px');
+   });
+
+
+</script>
+
+<script type="text/javascript">
+	jQuery(document).ready(function( $ ) {
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1500
+        });
+    });
+</script>
+
+
+
+
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+</body>
+</html>

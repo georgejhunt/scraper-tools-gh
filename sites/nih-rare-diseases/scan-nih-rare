@@ -1,0 +1,34 @@
+#!/usr/bin/python3
+import re
+
+from basiccrawler.crawler import BasicCrawler
+from basiccrawler.crawler import LOGGER, logging, set_log_level
+set_log_level(logging.DEBUG)
+
+# PARAMS
+################################################################################
+site = 'rarediseases.info.nih.gov'
+MAIN_SOURCE_DOMAIN = 'https://' + site
+START_PAGE = 'https://' + site
+SOURCE_DOMAINS = []
+IGNORE_URLS = []
+
+# CLI
+################################################################################
+
+if __name__ == '__main__':
+    """
+    Crawl a the Learning Equality website at https://learningequality.org
+    """
+    crawler = BasicCrawler(main_source_domain=MAIN_SOURCE_DOMAIN)
+    crawler.IGNORE_URLS.extend(IGNORE_URLS)
+    crawler.CRAWLING_STAGE_OUTPUT = './' + site + '_tree.json'
+    crawler.CRAWLING_OUTPUT_URLS = './' + site + '_urls.json'
+    crawler.CRAWLING_OUTPUT_PAGES = './' + site + '_pages.json'
+    crawler.CRAWLING_OUTPUT_REDIRECTS = './' + site + '_redirects.json'
+    crawler.SHORTEN_CRAWL = True
+
+    channel_tree = crawler.crawl(limit=None)
+
+    #crawler.print_tree(channel_tree)
+    print('\nOutput web resource tree saved to', crawler.CRAWLING_STAGE_OUTPUT)

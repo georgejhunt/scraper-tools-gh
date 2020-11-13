@@ -203,5 +203,14 @@ def human_readable(num):
             return "%.0f%s"%(num, units[i])
         num /= 1024.0
 
+def list_type_urls(type):
+    for p in site_pages:
+        children = site_pages[p]['children']
+        for c in children:
+            ctype = site_urls[c]['content-type']
+            if 'video' in ctype:
+                print (p)
+
+
 if __name__ == "__main__":
     main(sys.argv)

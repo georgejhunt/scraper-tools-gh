@@ -98,7 +98,7 @@ def replace_links(tag, from_link, to_link=None):
         if link[-1] == '/':
             link = link[:-1]
         filename = link.rsplit('/')[-1]
-        if '.' not in filename[-1]:
+        if '.' not in filename[:-1]:
             filename += '.' + suffix
         if filename[-1] == '.':
             filename += suffix

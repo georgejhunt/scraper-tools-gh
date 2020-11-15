@@ -49,6 +49,9 @@ def do_page(path):
     for s in page(["script", "style"]): # remove all javascript and stylesheet code
         s.extract()
 
+    for comments in page.head.findAll(text=lambda text:isinstance(text, Comment)):
+         comments.extract()
+
     article_parts = page.find_all("div", {"class":"card"}) # there are 2
     article_text = article_parts[0]
     article_ref = article_parts[1]

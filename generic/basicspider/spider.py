@@ -305,7 +305,9 @@ class BasicSpider(object):
         Subclasses can overload this method to perform other URL-normalizations.
         """
         url = urldefrag(url)[0]
-        return url
+        url_parts = urlparse(url)
+        url_parts = url_parts._replace(path=url_parts.path.replace('//','/'))
+        return url_parts.geturl()
 
     def url_to_path(self, url):
         """

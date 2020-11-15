@@ -3,10 +3,14 @@ import os, string, sys
 import copy
 import json
 import re
+from urllib.parse import urljoin, urldefrag, urlparse
 from bs4 import BeautifulSoup, Comment, SoupStrainer
 import iiab.adm_lib as adm
 
 site = 'www.statpearls.com'
+
+orig_dir = '/articlelibrary/viewarticle/'
+base_url = 'https://' + site + orig_dir
 src_dir = 'raw/'
 dst_dir = '/library/www/html/modules/en-statpearls/articles/'
 
@@ -18,16 +22,17 @@ def main(argv):
     # need site_urls for type of image - see below
 
     file_list = os.listdir(src_dir)
-    file_list = ['article-788.html', 'article-99590.html', 'article-29120.html', 'article-16989.html']
+    #file_list = ['article-17922.html','article-41380.html','article-788.html', 'article-99590.html', 'article-29120.html', 'article-16989.html']
     for filename in file_list:
         print('Converting ' + filename)
         if not filename.endswith(".html"):
             print('Skippinging ' + filename)
             continue
         page = do_page(os.path.join(src_dir, filename))
+        html_output = page.encode_contents(formatter='html')
 
-        with open(dst_dir + filename, 'w') as f:
-            f.write(page.prettify())
+        with open(dst_dir + filename, 'wb') as f:
+            f.write(html_output)
 
 def do_page(path):
     with open(path, 'r') as f:
@@ -88,7 +93,14 @@ def replace_links(tag, from_link, to_link=None):
     for link_tag in links:
         #print(link_tag)
         link = link_tag['href']
-        url = 'https://' + site + link
+        #print(link)
+        # make sure this is one of our target links
+        parsed_link = urlparse(link)
+        if parsed_link.netloc and parsed_link.netloc != site:
+            continue
+        url = urljoin(base_url, link)
+        url = cleanup_url(url) # put url in same format as in json
+
         content_type = site_urls[url].get('content-type', '')
         content_type = content_type.strip()
         if content_type == 'image/jpeg':
@@ -107,11 +119,14 @@ def replace_links(tag, from_link, to_link=None):
         print(local_file)
         link_tag['href'] = link_tag['href'].replace(link, local_file)
         img_link = link_tag.find('img')
-        img_url = img_link['src']
-        img_link['src'] = img_link['src'].replace(img_url, local_file)
+        #print(img_link)
+        if img_link:
+            img_url = img_link['src']
+            img_link['src'] = img_link['src'].replace(img_url, local_file)
     #print('tag after len: ',len(tag))
     return tag
 
+######## NOT USED ##################
 def repl_pic_links(page):
     pix_links = page.body.find_all(href=re.compile("/pictures/getimagecontent"))
     for pix_link in pix_links:
@@ -132,6 +147,16 @@ def repl_pic_links(page):
         img_link = pix_link.find('img')
         img_url = img_link['src']
         img_link['src'] = img_link['src'].replace(img_url, local_file)
+
+def cleanup_url(url): # in future this will be done in spider
+        """
+        Removes URL fragment that falsely make URLs look diffent.
+        Subclasses can overload this method to perform other URL-normalizations.
+        """
+        url = urldefrag(url)[0]
+        url_parts = urlparse(url)
+        url_parts = url_parts._replace(path=url_parts.path.replace('//','/'))
+        return url_parts.geturl()
 
 def get_head_lines():
     head_lines = '''

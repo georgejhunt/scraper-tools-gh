@@ -160,7 +160,7 @@ def cleanup_url(url): # in future this will be done in spider
 
 def get_head_lines():
     head_lines = '''
-    <link href="/common/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/bootstrap.min.css" rel="stylesheet">
     <link href="../assets/style.css" rel="stylesheet">
     <link href="../assets/magnific-popup.min.css" rel="stylesheet">
     <link href="../assets/video-js.css" rel="stylesheet">
@@ -193,8 +193,8 @@ def get_head_lines():
 
 def get_bottom_lines():
     bottom_lines = '''
-    <script src="/common/js/jquery.min.js"></script>
-    <script src="/common/js/bootstrap.min.js"></script>
+    <script src="../assets/jquery.min.js"></script>
+    <script src="../assets/bootstrap.min.js"></script>
     <script src="../assets/jquery.magnific-popup.min.js"></script>
     <script>
         $(document).ready(function () {

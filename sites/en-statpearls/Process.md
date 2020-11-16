@@ -6,3 +6,7 @@ It will also create json files will all pages, urls, and other statistics.
 3. Run conv_html.py. This will fix up urls and simplify all the html pages.
 4. Run make-zim.sh. This will create a zim file.
 5. Add the zim to library.xml using iiab-make-kiwix-lib and use the resulting xml for iiab-library.xml
+
+In future we will want to use the [Article Index](https://www.statpearls.com/ArticleLibrary/index) to determine which articles need to be refreshed.
+
+make-stat-pearl-cat.py will need to be modified for this.

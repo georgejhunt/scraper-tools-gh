@@ -1,0 +1,910 @@
+{
+  "Computer Basics": {
+    "category": "Computer Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/computerbasics.zip"
+  },
+  "Basic Computer Skills": {
+    "category": "Computer Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/basic-computer-skills.zip"
+  },
+  "Mouse Tutorial": {
+    "category": "Computer Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/mousetutorial.zip"
+  },
+  "Typing Tutorial": {
+    "category": "Computer Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/typing.zip"
+  },
+  "Computer Science": {
+    "category": "Digital Media Literacy",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/computer-science.zip"
+  },
+  "Tech Savvy Tips and Tricks": {
+    "category": "Search Better",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/techsavvy.zip"
+  },
+  "Email Basics": {
+    "category": "Email Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/email101.zip"
+  },
+  "Gmail": {
+    "category": "Google Account",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/gmail.zip"
+  },
+  "Beyond Email": {
+    "category": "Email Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/beyondemail.zip"
+  },
+  "Chrome": {
+    "category": "Chrome",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/chrome.zip"
+  },
+  "Firefox": {
+    "category": "Chrome",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/firefox.zip"
+  },
+  "Edge": {
+    "category": "Chrome",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/edge.zip"
+  },
+  "Internet Basics": {
+    "category": "Chrome",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/internetbasics.zip"
+  },
+  "Internet Explorer": {
+    "category": "Chrome",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/internetexplorer.zip"
+  },
+  "Internet Tips": {
+    "category": "Chrome",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/internet-tips.zip"
+  },
+  "Safari": {
+    "category": "Chrome",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/safari.zip"
+  },
+  "Search Better": {
+    "category": "Search Better",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/search-better-2018.zip"
+  },
+  "Use Information Correctly": {
+    "category": "Search Better",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/useinformationcorrectly.zip"
+  },
+  "Using the Web to Get Stuff Done": {
+    "category": "Search Better",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/using-the-web-to-get-stuff-done.zip"
+  },
+  "Etsy": {
+    "category": "Dropbox",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/etsy.zip"
+  },
+  "Dropbox": {
+    "category": "Dropbox",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/dropbox.zip"
+  },
+  "Prezi": {
+    "category": "Dropbox",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/prezi.zip"
+  },
+  "Internet Safety": {
+    "category": "Internet Safety",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/internetsafety.zip"
+  },
+  "Internet Safety for Kids": {
+    "category": "Internet Safety",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/internetsafetyforkids.zip"
+  },
+  "Digital Media Literacy": {
+    "category": "Digital Media Literacy",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/digital-media-literacy.zip"
+  },
+  "Digital Photography": {
+    "category": "Digital Photography",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/digitalphotography.zip"
+  },
+  "Image Editing 101": {
+    "category": "Digital Photography",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/imageediting101.zip"
+  },
+  "Photoshop Basics": {
+    "category": "Digital Photography",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/photoshopbasics.zip"
+  },
+  "Beginning Graphic Design": {
+    "category": "Digital Photography",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/beginning-graphic-design.zip"
+  },
+  "Blog Basics": {
+    "category": "Blog Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/blogbasics.zip"
+  },
+  "Facebook": {
+    "category": "Blog Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/facebook101.zip"
+  },
+  "Facebook for iPhone": {
+    "category": "Blog Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/facebook-iphone.zip"
+  },
+  "Instagram": {
+    "category": "Blog Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/instagram.zip"
+  },
+  "LinkedIn Basics": {
+    "category": "Blog Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/linkedin.zip"
+  },
+  "Meetup": {
+    "category": "Blog Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/meetup.zip"
+  },
+  "Pinterest": {
+    "category": "Blog Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/pinterest.zip"
+  },
+  "Skype": {
+    "category": "Blog Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/skype-2016.zip"
+  },
+  "Snapchat": {
+    "category": "Blog Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/snapchat.zip"
+  },
+  "Twitter": {
+    "category": "Blog Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/twitter.zip"
+  },
+  "WhatsApp": {
+    "category": "Blog Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/whatsapp.zip"
+  },
+  "WordPress Resources": {
+    "category": "Blog Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/wordpress-resources.zip"
+  },
+  "YouTube": {
+    "category": "Blog Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/youtube.zip"
+  },
+  "Zoom": {
+    "category": "Blog Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/zoom.zip"
+  },
+  "Google Account": {
+    "category": "Google Account",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/googleaccount.zip"
+  },
+  "Google Docs": {
+    "category": "Google Account",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/googledocuments.zip"
+  },
+  "Google Drive": {
+    "category": "Google Account",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/googledriveanddocs.zip"
+  },
+  "Google Maps": {
+    "category": "Google Account",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/google-maps.zip"
+  },
+  "Google Sheets": {
+    "category": "Google Account",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/googlespreadsheets.zip"
+  },
+  "Google Slides": {
+    "category": "Google Account",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/googleslides.zip"
+  },
+  "Google Tips": {
+    "category": "Google Account",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/google-tips.zip"
+  },
+  "Microsoft Account": {
+    "category": "Microsoft Account",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/microsoftaccount.zip"
+  },
+  "OneDrive and Office Online": {
+    "category": "Microsoft Account",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/onedrive.zip"
+  },
+  "SharePoint Resources": {
+    "category": "Microsoft Account",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/sharepoint-resources.zip"
+  },
+  "Word": {
+    "category": "Word Tips",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/word.zip"
+  },
+  "Excel": {
+    "category": "Excel Formulas",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/excel.zip"
+  },
+  "PowerPoint": {
+    "category": "PowerPoint Tips",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/powerpoint.zip"
+  },
+  "Access": {
+    "category": "Access",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/access.zip"
+  },
+  "Excel Formulas": {
+    "category": "Excel Formulas",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/excelformulas.zip"
+  },
+  "Word Tips": {
+    "category": "Word Tips",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/word-tips.zip"
+  },
+  "Excel Tips": {
+    "category": "Excel Formulas",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/excel-tips.zip"
+  },
+  "PowerPoint Tips": {
+    "category": "PowerPoint Tips",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/powerpoint-tips.zip"
+  },
+  "Access 2016": {
+    "category": "Access",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/access2016.zip"
+  },
+  "Excel 2016": {
+    "category": "Excel Formulas",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/excel2016.zip"
+  },
+  "PowerPoint 2016": {
+    "category": "PowerPoint Tips",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/powerpoint2016.zip"
+  },
+  "Word 2016": {
+    "category": "Word Tips",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/word2016.zip"
+  },
+  "Access 2013": {
+    "category": "Access",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/access2013.zip"
+  },
+  "Excel 2013": {
+    "category": "Excel Formulas",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/excel2013.zip"
+  },
+  "PowerPoint 2013": {
+    "category": "PowerPoint Tips",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/powerpoint2013.zip"
+  },
+  "Word 2013": {
+    "category": "Word Tips",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/word2013.zip"
+  },
+  "Access 2010": {
+    "category": "Access",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/access2010.zip"
+  },
+  "Excel 2010": {
+    "category": "Excel Formulas",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/excel2010.zip"
+  },
+  "Outlook 2010": {
+    "category": "Access 2010",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/outlook2010.zip"
+  },
+  "PowerPoint 2010": {
+    "category": "PowerPoint Tips",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/powerpoint2010.zip"
+  },
+  "Publisher 2010": {
+    "category": "Access 2010",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/publisher2010.zip"
+  },
+  "Word 2010": {
+    "category": "Word Tips",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/word2010.zip"
+  },
+  "Access 2007": {
+    "category": "Access",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/access2007.zip"
+  },
+  "Excel 2007": {
+    "category": "Excel Formulas",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/excel2007.zip"
+  },
+  "PowerPoint 2007": {
+    "category": "PowerPoint Tips",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/powerpoint2007.zip"
+  },
+  "Word 2007": {
+    "category": "Word Tips",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/word2007.zip"
+  },
+  "Office 2003 Basics": {
+    "category": "Office 2003 Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/office2003basics.zip"
+  },
+  "Access 2003": {
+    "category": "Access",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/access2003.zip"
+  },
+  "Excel 2003": {
+    "category": "Excel Formulas",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/excel2003.zip"
+  },
+  "Outlook 2003": {
+    "category": "Office 2003 Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/outlook2003.zip"
+  },
+  "PowerPoint 2003": {
+    "category": "PowerPoint Tips",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/powerpoint2003.zip"
+  },
+  "Publisher 2003": {
+    "category": "Office 2003 Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/publisher2003.zip"
+  },
+  "Word 2003": {
+    "category": "Word Tips",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/word2003.zip"
+  },
+  "Office XP Basics": {
+    "category": "Office XP Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/officexpbasics.zip"
+  },
+  "Word XP": {
+    "category": "Word Tips",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/wordxp.zip"
+  },
+  "Excel XP": {
+    "category": "Excel Formulas",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/excelxp.zip"
+  },
+  "PowerPoint XP": {
+    "category": "PowerPoint Tips",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/powerpointxp.zip"
+  },
+  "Access XP": {
+    "category": "Access",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/accessxp.zip"
+  },
+  "Office 2000 Basics": {
+    "category": "Office 2000 Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/office2000basics.zip"
+  },
+  "Access 2000": {
+    "category": "Access",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/access2000.zip"
+  },
+  "Excel 2000": {
+    "category": "Excel Formulas",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/excel2000.zip"
+  },
+  "PowerPoint 2000": {
+    "category": "PowerPoint Tips",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/powerpoint2000.zip"
+  },
+  "Word 2000": {
+    "category": "Word Tips",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/word2000.zip"
+  },
+  "All Activities": {
+    "category": "All Activities",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/edlall.zip"
+  },
+  "Around Town": {
+    "category": "All Activities",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/aroundtown.zip"
+  },
+  "Food and Cooking": {
+    "category": "All Activities",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/foodandcooking.zip"
+  },
+  "Health and Safety": {
+    "category": "All Activities",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/healthandsafety.zip"
+  },
+  "Money": {
+    "category": "All Activities",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/edlmoney.zip"
+  },
+  "Work Skills": {
+    "category": "All Activities",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/workskills.zip"
+  },
+  "Addition and Subtraction": {
+    "category": "Addition and Subtraction",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/additionsubtraction.zip"
+  },
+  "Multiplication and Division": {
+    "category": "Addition and Subtraction",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/multiplicationdivision.zip"
+  },
+  "Fractions": {
+    "category": "Addition and Subtraction",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/fractions.zip"
+  },
+  "Decimals": {
+    "category": "Addition and Subtraction",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/decimals.zip"
+  },
+  "Percents": {
+    "category": "Addition and Subtraction",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/percents.zip"
+  },
+  "Algebra Topics": {
+    "category": "Addition and Subtraction",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/algebra-topics.zip"
+  },
+  "Good at Math": {
+    "category": "Addition and Subtraction",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/goodatmath.zip"
+  },
+  "Grammar": {
+    "category": "Grammar",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/grammar.zip"
+  },
+  "Learn English": {
+    "category": "Grammar",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/learnenglish.zip"
+  },
+  "Practice Reading": {
+    "category": "Grammar",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/practicereading.zip"
+  },
+  "Reading Activities": {
+    "category": "Grammar",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/readingactivities.zip"
+  },
+  "Design in the World Around Us": {
+    "category": "Digital Photography",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/design-in-the-world-around-us.zip"
+  },
+  "Creativity": {
+    "category": "Digital Photography",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/creativity.zip"
+  },
+  "Canva": {
+    "category": "Digital Photography",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/canva.zip"
+  },
+  "Beginning a New Career": {
+    "category": "Beginning a New Career",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/beginning-a-new-career.zip"
+  },
+  "Career Planning and Salary": {
+    "category": "Beginning a New Career",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/careerplanningandsalary.zip"
+  },
+  "Careers Without College": {
+    "category": "Beginning a New Career",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/careers-without-college.zip"
+  },
+  "Job Search and Networking": {
+    "category": "Job Search and Networking",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/jobsearchandnetworking.zip"
+  },
+  "Resume Writing": {
+    "category": "Job Applications",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/resumewriting.zip"
+  },
+  "Cover Letters": {
+    "category": "Job Applications",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/coverletters.zip"
+  },
+  "Job Applications": {
+    "category": "Job Applications",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/jobapplications.zip"
+  },
+  "Interviewing Skills": {
+    "category": "Job Applications",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/interviewingskills.zip"
+  },
+  "Indeed": {
+    "category": "Job Search and Networking",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/indeed.zip"
+  },
+  "Money Basics": {
+    "category": "Money Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/moneybasics.zip"
+  },
+  "Online Money Tips": {
+    "category": "Money Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/online-money-tips.zip"
+  },
+  "QuickBooks Resources": {
+    "category": "QuickBooks Resources",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/quickbooks-resources.zip"
+  },
+  "Business Communication": {
+    "category": "Business Communication",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/business-communication.zip"
+  },
+  "Communication Skills": {
+    "category": "Business Communication",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/communicationskills.zip"
+  },
+  "Job Success": {
+    "category": "Business Communication",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/jobsuccess.zip"
+  },
+  "Workplace Basics": {
+    "category": "Business Communication",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/workplacebasics.zip"
+  },
+  "Sharing Economy": {
+    "category": "Digital Media Literacy",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/sharingeconomy.zip"
+  },
+  "The Now": {
+    "category": "Digital Media Literacy",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/thenow.zip"
+  },
+  "Wearables": {
+    "category": "Digital Media Literacy",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/wearables.zip"
+  },
+  "Android Basics": {
+    "category": "Android Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/androidbasics.zip"
+  },
+  "Chromebook Basics": {
+    "category": "Android Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/chromebookbasics.zip"
+  },
+  "iPad Basics": {
+    "category": "Android Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/ipadbasics.zip"
+  },
+  "iPhone Basics": {
+    "category": "Android Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/iphonebasics.zip"
+  },
+  "Mobile Device Tips": {
+    "category": "Android Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/mobile-device-tips.zip"
+  },
+  "Buying Computers": {
+    "category": "Buying Computers",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/buying-computers.zip"
+  },
+  "Buying Other Tech Devices": {
+    "category": "Buying Computers",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/buying-other-tech-devices.zip"
+  },
+  "Buying Smartphones": {
+    "category": "Buying Computers",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/buying-smartphones.zip"
+  },
+  "Buying Tablets": {
+    "category": "Buying Computers",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/buying-tablets.zip"
+  },
+  "Google Hangouts": {
+    "category": "Google Account",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/googlehangouts.zip"
+  },
+  "Google Forms": {
+    "category": "Google Account",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/google-forms.zip"
+  },
+  "Google Classroom": {
+    "category": "Google Account",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/google-classroom.zip"
+  },
+  "Linux Mint Resources": {
+    "category": "Linux Mint Resources",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/linux-mint-resources.zip"
+  },
+  "Ubuntu Resources": {
+    "category": "Linux Mint Resources",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/ubuntu-linux-resources.zip"
+  },
+  "macOS Basics": {
+    "category": "macOS Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/macosbasics.zip"
+  },
+  "Windows Basics": {
+    "category": "Windows Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/windowsbasics.zip"
+  },
+  "Windows 10": {
+    "category": "Windows Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/windows10.zip"
+  },
+  "Windows 8": {
+    "category": "Windows Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/windows8.zip"
+  },
+  "Windows 7": {
+    "category": "Windows Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/windows7.zip"
+  },
+  "Windows XP": {
+    "category": "Windows Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/windowsxp.zip"
+  },
+  "Windows 98": {
+    "category": "Windows Basics",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/windows98.zip"
+  },
+  "GED Prep Resources": {
+    "category": "GED Prep Resources",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/ged-prep-resources.zip"
+  },
+  "Critical Thinking and Decision-Making": {
+    "category": "Digital Media Literacy",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/problem-solving-and-decision-making.zip"
+  },
+  "Freelance Work": {
+    "category": "Freelance Work",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/freelance-work.zip"
+  },
+  "Adapting to Change": {
+    "category": "Digital Media Literacy",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/adapting-to-change.zip"
+  },
+  "Computer Programming Basics": {
+    "category": "Digital Media Literacy",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/computer-programming-basics.zip"
+  },
+  "Basic HTML": {
+    "category": "Digital Media Literacy",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/basic-html.zip"
+  },
+  "Part-Time Jobs": {
+    "category": "Freelance Work",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/part-time-jobs.zip"
+  },
+  "Work and Money Podcasts": {
+    "category": "Freelance Work",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/work-and-money-podcasts.zip"
+  },
+  "Career Experiences": {
+    "category": "Freelance Work",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/career-experiences.zip"
+  },
+  "Online Education": {
+    "category": "Online Education",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/online-education.zip"
+  },
+  "Learning Tips": {
+    "category": "Online Education",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/learning-tips.zip"
+  },
+  "Basic Spanish Skills": {
+    "category": "Basic Spanish Skills",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/basicspanishskills.zip"
+  },
+  "Apprendre l'anglais": {
+    "category": "Apprendre l'anglais",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/apprendre-langlais.zip"
+  },
+  "Englisch lernen": {
+    "category": "Apprendre l'anglais",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/englisch-lernen.zip"
+  },
+  "Arabic": {
+    "category": "Apprendre l'anglais",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/arabic.zip"
+  },
+  "Chinese": {
+    "category": "Apprendre l'anglais",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/chinese.zip"
+  },
+  "Aprenda Inglês": {
+    "category": "Apprendre l'anglais",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/aprenda-ingles.zip"
+  },
+  "Korean": {
+    "category": "Apprendre l'anglais",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/korean.zip"
+  },
+  "Simple English": {
+    "category": "Apprendre l'anglais",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/simple-english.zip"
+  },
+  "Français": {
+    "category": "Français",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_fr-misc.zip"
+  },
+  "Initiation all'informatique": {
+    "category": "Français",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_fr-computer-basics.zip"
+  },
+  "Интернет-безопасность": {
+    "category": "Интернет-безопасность",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_ru-internet-safety.zip"
+  },
+  "Интернет-безопасность для детей": {
+    "category": "Интернет-безопасность",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_ru-internet-safety-for-kids.zip"
+  },
+  "русский": {
+    "category": "Интернет-безопасность",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_ru-misc.zip"
+  },
+  "中文": {
+    "category": "中文",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_zh-cn-misc.zip"
+  },
+  "计算机基础": {
+    "category": "中文",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_zh-cn-computer-basics.zip"
+  },
+  "计算机基本技能": {
+    "category": "中文",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_zh-cn-basic-computer-skills.zip"
+  },
+  "儿童因特网安全": {
+    "category": "中文",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_zh-cn-internet-safety-for-kids.zip"
+  },
+  "因特网安全": {
+    "category": "中文",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_zh-cn-internet-safety.zip"
+  },
+  "平面设计入门": {
+    "category": "中文",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_zh-cn-beginning-graphic-design.zip"
+  },
+  "谷歌地图": {
+    "category": "中文",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_zh-cn-google-maps.zip"
+  },
+  "Windows基础": {
+    "category": "中文",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_zh-cn-windows-basics.zip"
+  },
+  "谷歌使用技巧": {
+    "category": "中文",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_zh-cn-google-tips.zip"
+  },
+  "Grunnleggende IT-ferdigheter": {
+    "category": "Grunnleggende IT-ferdigheter",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_no-basic-computer-skills.zip"
+  },
+  "Grunnleggende om Datamaskiner": {
+    "category": "Grunnleggende IT-ferdigheter",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_no-computer-basics.zip"
+  },
+  "Grunnleggende om Windows": {
+    "category": "Grunnleggende IT-ferdigheter",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_no-windows-basics.zip"
+  },
+  "Internett-sikkerhet": {
+    "category": "Grunnleggende IT-ferdigheter",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_no-internet-safety.zip"
+  },
+  "Dasar-Dasar Komputer": {
+    "category": "Dasar-Dasar Komputer",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_id-computer-basics.zip"
+  },
+  "Dasar-Dasar Windows": {
+    "category": "Dasar-Dasar Komputer",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_id-windows-basics.zip"
+  },
+  "Excel 2016 (Bahasa Indonesia)": {
+    "category": "Dasar-Dasar Komputer",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_id-excel-2016.zip"
+  },
+  "Google Maps (Bahasa Indonesia)": {
+    "category": "Dasar-Dasar Komputer",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_id-google-maps.zip"
+  },
+  "Keamanan Internet": {
+    "category": "Dasar-Dasar Komputer",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_id-internet-safety.zip"
+  },
+  "Keamanan Internet Untuk Anak-anak": {
+    "category": "Dasar-Dasar Komputer",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_id-internet-safety-for-kids.zip"
+  },
+  "Kemampuan-Kemampuan Komputer Dasar": {
+    "category": "Dasar-Dasar Komputer",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_id-basic-computer-skills.zip"
+  },
+  "Word 2016 (Bahasa Indonesia)": {
+    "category": "Dasar-Dasar Komputer",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_id-word-2016.zip"
+  },
+  "Χάρτες Google": {
+    "category": "Χάρτες Google",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_el-google-maps.zip"
+  },
+  "Μικρές συμβουλές Google": {
+    "category": "Χάρτες Google",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_el-google-tips.zip"
+  },
+  "Λογαριασμός Google": {
+    "category": "Χάρτες Google",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_el-google-account.zip"
+  },
+  "Gmail (Greek)": {
+    "category": "Χάρτες Google",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_el-gmail.zip"
+  },
+  "Google Drive (Greek)": {
+    "category": "Χάρτες Google",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_el-google-drive.zip"
+  },
+  "Φόρμες Google": {
+    "category": "Χάρτες Google",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_el-google-forms.zip"
+  },
+  "Έγγραφα Google": {
+    "category": "Χάρτες Google",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_el-google-docs.zip"
+  },
+  "Παρουσιάσεις Google": {
+    "category": "Χάρτες Google",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_el-google-slides.zip"
+  },
+  "Υπολογιστικά Φύλλα Google": {
+    "category": "Χάρτες Google",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_el-google-sheets.zip"
+  },
+  "YouTube (Greek)": {
+    "category": "Χάρτες Google",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_el-youtube.zip"
+  },
+  "أساسيات الكمبيوتر": {
+    "category": "أساسيات الكمبيوتر",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_ar-misc.zip"
+  },
+  "أكسيل 2016": {
+    "category": "أساسيات الكمبيوتر",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_ar-excel-2016.zip"
+  },
+  "Балдар үчүн интернет коопсуздугу": {
+    "category": "Балдар үчүн интернет коопсуздугу",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_ky-internet-safety-for-kids.zip"
+  },
+  "Интернет коопсуздугу": {
+    "category": "Балдар үчүн интернет коопсуздугу",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_ky-internet-safety.zip"
+  },
+  "Google Карталар": {
+    "category": "Балдар үчүн интернет коопсуздугу",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_ky-google-maps.zip"
+  },
+  "Компьютерде иштөө негиздери": {
+    "category": "Балдар үчүн интернет коопсуздугу",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_ky-basic-computer-skills.zip"
+  },
+  "Графикалык дизайн негиздери": {
+    "category": "Балдар үчүн интернет коопсуздугу",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_ky-beginning-graphic-design.zip"
+  },
+  "Google колдонуу кеңештери": {
+    "category": "Балдар үчүн интернет коопсуздугу",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_ky-google-tips.zip"
+  },
+  "Windows негиздери": {
+    "category": "Балдар үчүн интернет коопсуздугу",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_ky-windows-basics.zip"
+  },
+  "Компьютер негиздери": {
+    "category": "Балдар үчүн интернет коопсуздугу",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_ky-computer-basics.zip"
+  },
+  "PowerPoint 2016 Негиздери": {
+    "category": "Балдар үчүн интернет коопсуздугу",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_ky-powerpoint-2016.zip"
+  },
+  "Excel 2016 Негиздери": {
+    "category": "Балдар үчүн интернет коопсуздугу",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_ky-excel-2016.zip"
+  },
+  "Word 2016 Негиздери": {
+    "category": "Балдар үчүн интернет коопсуздугу",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_ky-word-2016.zip"
+  },
+  "Computer Basiskennis": {
+    "category": "Computer Basiskennis",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_nl-computer-basics.zip"
+  },
+  "Computer basisvaardigheden": {
+    "category": "Computer Basiskennis",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_nl-basic-computer-skills.zip"
+  },
+  "Excel (Polski)": {
+    "category": "Excel (Polski)",
+    "zip-url": "https://media.gcflearnfree.org/global/downloadable/en/tr_pl-excel.zip"
+  }
+}

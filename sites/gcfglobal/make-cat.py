@@ -9,6 +9,7 @@ import uuid
 from copy import deepcopy
 import iiab.adm_lib as adm
 
+GCFGLOBAL = 'https://edu.gcfglobal.org/en/download/all'
 gcf_catalog = {}
 item_base = {
       "rating": "",
@@ -31,6 +32,8 @@ item_base = {
       "lang": "en",
       "prereq_note": "",
       "zip_http_url": "",
+      "zip_size": "",
+      "zip_date": "",
       "file_count": "0"
     }
 
@@ -57,6 +60,8 @@ for topic in topics:
             moddir = moddir[3:]
         else:
             moddir = 'en-' + moddir
+        
+        head = request.head(GCFC_URL)
 
         item_info = {}
         item_info = deepcopy(item_base)
@@ -65,7 +70,6 @@ for topic in topics:
         item_info['moddir'] = moddir
         item_info['category'] = category
         item_info['title'] = title
-        item_info['category'] = category
         item_info['lang'] = moddir[0:2] # may not work for Chinese
         item_info['category'] = category
         item_info['zip_http_url'] = zip_url

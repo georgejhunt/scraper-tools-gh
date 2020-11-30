@@ -14,7 +14,7 @@ from subprocess import Popen, PIPE
 
 # Globals
 db = object
-WORKING_DIR = '/library/working/rachel'
+WORKING_DIR = "/library/www/html/modules/gcf"
 gcf_catalog = {}
 
 class Sqlite():

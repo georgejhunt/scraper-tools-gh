@@ -38,7 +38,7 @@ item_base = {
       "file_count": "0"
     }
 
-WORKING_DIR = "/library/working/rachel"
+WORKING_DIR = "/library/www/html/modules/gcf"
 GCFGLOBAL = 'https://edu.gcfglobal.org/en/download/all'
 
 if not os.path.isdir(WORKING_DIR + '/download-all.html'):

@@ -12,12 +12,12 @@ import requests
 import subprocess
 from subprocess import Popen, PIPE
 import zipfile
-import pdb; pdb.set_trace()
+#import pdb; pdb.set_trace()
 
 
 # Globals
 db = object
-WORKING_DIR = '/library/working/rachel'
+WORKING_DIR = "/library/www/html/modules/gcf"
 gcf_catalog = {}
 
 class Sqlite():
@@ -67,22 +67,35 @@ def main():
             #print('  %s  %s'%(row['moddir'],row['zip_http_url']))
             dest_dir = WORKING_DIR + '/tree/' +  category + '/' + row['moddir'] + '/'
             src_dir = WORKING_DIR + '/zip-files/'
-            '''
-            if os.path.exists(src_dir + os.path.basename(row['source_url'])):
+            #if os.path.exists(src_dir + os.path.basename(row['source_url'])):
+            if False:
                 print('removing %s'%(src_dir + os.path.basename(row['source_url'])))
                 os.remove(src_dir + os.path.basename(row['source_url']))
             make_directory(dest_dir)
-            download_file(row['source_url'],src_dir)
-            '''
+
+            # Get the zip file from GCFGlobal
+            if not os.path.exists(src_dir + os.path.basename(row['source_url'])):
+                print("Downloading %s"%row['source_url'])
+                download_file(row['source_url'],src_dir)
             downloaded = src_dir + os.path.basename(row['source_url'])
+
+            # unzip only really work into the curent directory, so go there
             cdir = os.getcwd()
             os.chdir(dest_dir)
-            cmd = '/usr/bin/unzip %s '%(downloaded)
-            exit_code = subprocess.run(cmd,shell=True)
-            print(str(exit_code))
 
-            os.chdir(cdir)
-            sys.exit(1)
+            # If the direcetory has content, then skip over
+            return_code = subprocess.run('du -s',shell=True,capture_output=True,text=True)
+            size = return_code.stdout[:-2]
+            if int(size) < 100:
+                cmd = '/usr/bin/unzip -q %s '%(downloaded)
+                print('Unzipping %s'%downloaded)
+                exit_code = subprocess.run(cmd,shell=True)
+                os.chdir(cdir)
+                if exit_code.returncode != 0:
+                    print('Unzip returned non zero value')
+                    with open('scrape.errors','w+') as fp:
+                        fp.write('unzip error for %s'%downloaded)
+            
 
 ###########################################################
 if __name__ == "__main__":

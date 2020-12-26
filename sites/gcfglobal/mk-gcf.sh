@@ -44,15 +44,33 @@ cd $curdir
 # So I used a recursive wget -- mostly to get the lay of the land
 GCF_TREE=/library/www/html/modules/oneline
 mkdir -p $GCF_TREE
-if [ ! -f $GCF_TREE/index.html
-      wget -nHc -r -P $GCF_TREE/ -k -K --page-requisites https://edu.gcfglobal.org/
+if [ ! -f $GCF_TREE/index.html }; then
+   wget -nHc -r -P $GCF_TREE/ -k -K --page-requisites https://edu.gcfglobal.org/
 fi
 /bin/cp -rpf $GCF_TREE/scripts $DISPDIR
 /bin/cp -rpf $GCF_TREE/styles $DISPDIR
 /bin/cp -rpf $GCF_TREE/images $DISPDIR
+/bin/cp -rpf $GCF_TREE/en/subjects $DISPDIR/en
 
 mkdir -p $DISPDIR/en/topics
 /bin/cp -rpf $GCF_TREE/en/topics/* $DISPDIR/en/topics/
+
+# Get the fonts and icons that gcf refers to from googleapis
+cd $WORKDIR/zip-files
+if [ ! -f source-sans-pro-v14-latin.zip ];then
+   wget http://download.iiab.io/content/source-sans-pro-v14-latin.zip
+   wget http://download.iiab.io/content/material-design-icons-3.0.1.zip
+   /usr/bin/unzip -q $WORKDIR/zip-files/material-design-icons-3.0.1.zip
+   mkdir -p $DISPDIR/fonts
+   cd $DISPDIR/fonts
+   /usr/bin/unzip -q $WORKDIR/zip-files/source-sans-pro-v14-latin.zip
+   cp -rp $WORKDIR/zip-files/material-design-icons-3.0.1/iconfont/* .
+fi
+
+# Put in our own css files which refer to the font files we just downloaded
+cd $curdir
+cp -p source-sans-pro.css $DISPDIR/styles
+cp -p material-icons.css $DISPDIR/styles
 
 # If tutorial.html is changed to index.html, the menu system works offline
 cd $DISPDIR/en/
@@ -68,15 +86,20 @@ cd $DISPDIR/en/topics
 for f in $(find .|egrep /.+/index.html); do
    echo Topics child $f
    sed -i -e's|href="/styles/|href="../../styles/|' $f
-   sed -i -e's|src"/scripts/|src=../../scripts/|' $f
+   sed -i -e's|src="/scripts/|src=../../scripts/|' $f
    sed -i -e's|src="/images/|src="../../images/|' $f
+   sed -i -e's|https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700|../../styles/source-sans-pro.css|' $f
+   sed -i -e's|https://fonts.googleapis.com/icon?family=Material+Icons|../../styles/material-icons.css|' $f
 done
 
 cd $DISPDIR/en/topics
 for f in $(find .|grep index.html); do
    sed -i -e's|/en/|../|' $f
+   sed -i -e's|https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700|../styles/source-sans-pro.css|' $f
+   sed -i -e's|https://fonts.googleapis.com/icon?family=Material+Icons|../styles/material-icons.css|' $f
 done
 
+cd $curdir
 # copy in my own hand crafted landing page -- extracted from header dropdown
 /bin/cp -rpf homepage.index.html $DISPDIR/index.html
 # We need a nice logo on our landing page
